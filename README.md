@@ -1,4 +1,8 @@
-# react td preview table
+# TD Preview Table
+
+ReactJS component. td-console preview table for user data.
+
+## Usage
 
 Get the module located at `td-preview-table.js` and include it in your project.
 
