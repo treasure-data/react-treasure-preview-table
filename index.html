@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>TdPreviewTable Demo</title>
+</head>
+<body>
+  <div id="main"></div>
+  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react-with-addons.js"></script>
+  <script src="example-data.js"></script>
+  <script src="td-preview-table.js"></script>
+  <script>
+    /* jshint undef:false */
+    React.addons.Perf.start();
+    React.render(React.createElement(TdPreviewTable, {
+      rows: window.rows,
+      columns: window.columns,
+      metadata: window.metadata
+    }), document.getElementById('main'), function () {
+      React.addons.Perf.stop();
+    });
+  </script>
+</body>
+</html>
