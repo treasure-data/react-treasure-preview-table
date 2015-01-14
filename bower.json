@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Cesar Andreu <cesar@treasure-data.com>",
   "private": true,
+  "main": "td-preview.table.js",
   "ignore": [
     "**/.*",
     "node_modules",
