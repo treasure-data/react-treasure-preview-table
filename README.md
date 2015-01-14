@@ -1,6 +1,8 @@
 # react td preview table
 
-Get the module located at `react-td-preview-table.js` and include it in your project.
+Get the module located at `td-preview-table.js` and include it in your project.
+
+Usable with CommonJS, ADM, and Globals. The exposed global is `TdPreviewTable`.
 
 ## Development
 
