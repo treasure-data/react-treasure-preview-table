@@ -2,6 +2,7 @@
   "name": "react-td-preview-table",
   "version": "1.0.0",
   "description": "td preview table",
+  "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/jsxhint lib/ spec/ && ./node_modules/.bin/jshint lib/ spec/ && ./node_modules/karma/bin/karma start karma.conf.js",
     "watch-test": "./node_modules/karma/bin/karma start karma.conf.js --auto-watch --no-single-run",
