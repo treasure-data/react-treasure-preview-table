@@ -10,14 +10,17 @@
   <script src="td-preview-table.js"></script>
   <script>
     /* jshint undef:false */
-    React.addons.Perf.start();
-    React.render(React.createElement(TdPreviewTable, {
-      rows: window.rows,
-      columns: window.columns,
-      metadata: window.metadata
-    }), document.getElementById('main'), function () {
-      React.addons.Perf.stop();
-    });
+    document.addEventListener('DOMContentLoaded', loadPreviewTable);
+    function loadPreviewTable () {
+      React.addons.Perf.start();
+      React.render(React.createElement(TdPreviewTable, {
+        rows: window.rows,
+        columns: window.columns,
+        metadata: window.metadata
+      }), document.getElementById('main'), function () {
+        React.addons.Perf.stop();
+      });
+    }
   </script>
 </body>
 </html>
