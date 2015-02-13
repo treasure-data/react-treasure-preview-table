@@ -1,6 +1,6 @@
 {
   "name": "react-td-preview-table",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Cesar Andreu <cesar@treasure-data.com>",
   "main": "td-preview.table.js",
   "ignore": [
