@@ -7,9 +7,9 @@
   "ignore": [
     "**/.*",
     "*.json",
-    'index.html',
-    'karma.conf.js',
-    'example-data.js',
+    "index.html",
+    "karma.conf.js",
+    "example-data.js",
     "node_modules",
     "bower_components",
     "spec",
