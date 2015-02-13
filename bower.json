@@ -6,6 +6,10 @@
   "main": "td-preview.table.js",
   "ignore": [
     "**/.*",
+    "*.json",
+    'index.html',
+    'karma.conf.js',
+    'example-data.js',
     "node_modules",
     "bower_components",
     "spec",
