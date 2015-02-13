@@ -16,7 +16,7 @@ describe('TdPreviewTable', function () {
   it('should render', function () {
     // component
     var node = component.getDOMNode();
-    expect(node.className).toEqual('td-preview-table');
+    expect(node.className).toEqual('td-preview-table datapreview');
   });
 
   it('should render thead', function () {
