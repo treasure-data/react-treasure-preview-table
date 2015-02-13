@@ -51,8 +51,8 @@ module.exports = React.createClass({
     }.bind(this));
 
     return (
-      <div className="td-preview-table">
-        <table>
+      <div className="td-preview-table datapreview">
+        <table className='table table-bordered table-striped resulttable querylist'>
           <thead>
             <tr>
               {columns}
