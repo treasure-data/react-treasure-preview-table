@@ -84,7 +84,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var metadataClasses = 'treasure-preview-table-metadata sprite16 ',
 	          metadataText = metadata[column.name];
 
-	        if (metadata) {
+	        if (metadataText) {
 	          metadataTooltip = (
 	            React.createElement(OverlayTrigger, {placement: "top", overlay: React.createElement(Tooltip, null, metadataText)}, 
 	              React.createElement("span", {className: metadataClasses + 'desc16'})
