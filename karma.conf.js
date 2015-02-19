@@ -14,7 +14,6 @@ module.exports = function(config) {
       // React is an external dependency of the component
       'node_modules/react/dist/react-with-addons.js',
 
-      'spec/spec-helper.js',
       'spec/**/*.spec.*',
       { pattern: 'lib/**/*', watched: true, included: false }
     ],
