@@ -11,6 +11,7 @@
     "*.html",
     "webpack.config.js",
     "example-data.js",
+    "karma.conf.js",
     "node_modules",
     "README.md",
     "LICENSE",
