@@ -21,7 +21,7 @@ var TreasurePreviewTable = React.createClass({
         var metadataClasses = 'treasure-preview-table-metadata sprite16 ',
           metadataText = metadata[column.name];
 
-        if (metadata) {
+        if (metadataText) {
           metadataTooltip = (
             <OverlayTrigger placement='top' overlay={<Tooltip>{metadataText}</Tooltip>}>
               <span className={metadataClasses + 'desc16'}></span>
