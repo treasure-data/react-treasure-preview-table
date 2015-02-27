@@ -1,7 +1,4 @@
-var React = require('react'),
-  Tooltip = require('react-bootstrap/lib/Tooltip'),
-  OverlayTrigger = require('react-bootstrap/lib/OverlayTrigger');
-
+var React = require('react');
 var TreasurePreviewTable = React.createClass({
   getDefaultProps: function () {
     return {
@@ -16,20 +13,18 @@ var TreasurePreviewTable = React.createClass({
     var columns = this.props.columns.map(function (column, key) {
       var metadataTooltip;
 
-      // Skip time and v columns
       if (['time', 'v'].indexOf(column.name) === -1) {
-        var metadataClasses = 'treasure-preview-table-metadata sprite16 ',
-          metadataText = metadata[column.name];
-
+        var metadataText = metadata[column.name], tooltipClass;
         if (metadataText) {
-          metadataTooltip = (
-            <OverlayTrigger placement='top' overlay={<Tooltip>{metadataText}</Tooltip>}>
-              <span className={metadataClasses + 'desc16'}></span>
-            </OverlayTrigger>
-          );
+          tooltipClass = 'treasure-preview-table-metadata sprite16 desc16';
         } else {
-          metadataTooltip = <span className={metadataClasses + 'nodesc16'}></span>;
+          tooltipClass = 'treasure-preview-table-metadata sprite16 nodesc16';
+          metadataText = 'no description';
         }
+
+        metadataTooltip = (
+          <span className={tooltipClass} data-tooltip={metadataText}></span>
+        );
       }
 
       return (
