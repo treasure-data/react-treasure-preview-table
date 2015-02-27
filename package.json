@@ -1,6 +1,6 @@
 {
   "name": "react-treasure-preview-table",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "treasure preview table",
   "main": "lib/treasure-preview.js",
   "repository": {
