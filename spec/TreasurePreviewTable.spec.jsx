@@ -38,7 +38,10 @@ describe('TreasurePreviewTable', function () {
       expect(row.className).toEqual('treasure-preview-table-body-row');
       expect(row.querySelectorAll('td').length).toEqual(data.columns.length);
       _.forEach(row.querySelectorAll('td'), function (column, columnIdx) {
-        var text = JSON.stringify(data.rows[rowIdx][data.columns[columnIdx].name]);
+        var text = data.rows[rowIdx][data.columns[columnIdx].name];
+        if (typeof text !== 'string') {
+          text = JSON.stringify(text);
+        }
         expect(column.textContent).toEqual(text);
       });
     });
