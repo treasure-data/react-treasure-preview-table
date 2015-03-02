@@ -98,7 +98,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    var rows = this.props.rows.map(function (row, key) {
 	      var columns = this.props.columns.map(function (column, key) {
-	        var value = JSON.stringify(row[column.name]);
+	        var value = row[column.name];
+	        if (typeof value !== 'string') {
+	          value = JSON.stringify(value);
+	        }
 	        return React.createElement("td", {key: key}, value);
 	      });
 
