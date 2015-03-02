@@ -47,4 +47,10 @@ describe('TreasurePreviewTable', function () {
     });
   });
 
+  it('should render metadata span', function () {
+    var node = component.getDOMNode().querySelectorAll('span.treasure-preview-table-metadata');
+    expect(node.length).toEqual(1);
+    expect(node[0].className).toEqual('treasure-preview-table-metadata sprite16 desc16');
+  });
+
 });
