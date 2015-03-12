@@ -2,7 +2,7 @@
   "name": "react-treasure-preview-table",
   "version": "5.0.0",
   "description": "treasure preview table",
-  "main": "lib/treasure-preview.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/treasure-data/react-treasure-preview-table.git"
