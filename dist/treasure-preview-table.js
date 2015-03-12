@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("React"));
+		module.exports = factory(require("react"));
 	else if(typeof define === 'function' && define.amd)
-		define(["React"], factory);
+		define(["react"], factory);
 	else if(typeof exports === 'object')
-		exports["TreasurePreviewTable"] = factory(require("React"));
+		exports["TreasurePreviewTable"] = factory(require("react"));
 	else
-		root["TreasurePreviewTable"] = factory(root["React"]);
+		root["TreasurePreviewTable"] = factory(root["react"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
