@@ -22,7 +22,7 @@
     "jasmine": "^2.1.1",
     "jasmine-core": "^2.1.3",
     "jsx-loader": "^0.12.2",
-    "jsxhint": "^0.11.1",
+    "jsxhint": "^0.13.2",
     "karma": "^0.12.28",
     "karma-jasmine": "^0.3.2",
     "karma-phantomjs-launcher": "^0.1.4",
